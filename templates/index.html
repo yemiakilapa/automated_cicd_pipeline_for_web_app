@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    
+    <form id="addTaskForm">
+        <input type="text" id="taskInput" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="taskList">
+        {% for task in tasks %}
+            <li>
+                {{ task }}
+                <button class="updateBtn" data-task-id="{{ loop.index0 }}">Update</button>
+                <button class="deleteBtn" data-task-id="{{ loop.index0 }}">Delete</button>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <script>
+        // Implement AJAX requests to update and delete tasks
+        // Use an event listener on the form to add new tasks asynchronously
+    </script>
+</body>
+</html>
