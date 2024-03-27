@@ -2,21 +2,22 @@ version: 0.2
 
 env:
   variables:
-    NODE_ENV: "${env}"
+    NODE_ENV: "test"
 
 phases:
   install:
     runtime-versions:
       nodejs: 18
     commands:
-      - npm i
-      # - npm run lint
+      - npm install
+      
   pre_build:
     commands:
-      - npm i
-      # - npm run test
+      - npm install
+      - npm run lint
   build:
     commands:
+      - npm run test
       - npm run build
 
 artifacts:
