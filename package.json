@@ -10,9 +10,9 @@
     "author": "yemi",
     "license": "MIT",
     "devDependencies": {
-      "jest": "^27.0.0", // Jest testing framework
-      "eslint": "^7.0.0" // ESLint linter
-      // Add any other testing libraries or linters here
+      "jest": "^27.0.0",
+      "eslint": "^7.0.0" 
+      
     }
   }
   
