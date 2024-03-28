@@ -23,9 +23,9 @@ phases:
 artifacts:
   files:
     - "**/*"
-  name: "web-dist-${env}"
+  name: "web-app-build"
   base-directory: build
 
 cache:
   paths:
-    - /root/.npm/**/*
+    - '/root/.npm/**/*''
