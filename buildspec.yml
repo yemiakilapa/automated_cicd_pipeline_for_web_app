@@ -21,10 +21,12 @@ phases:
       - npm run build
 
 artifacts:
+  discard-paths: yes
+
   files:
     - "**/*"
-  name: "web-app-build"
-  base-directory: build
+  #name: "web-app-build"
+ # base-directory: build
 
 cache:
   paths:
